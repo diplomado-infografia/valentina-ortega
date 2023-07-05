@@ -406,29 +406,11 @@
                 },
             ];
             var autoria = document.querySelector("#autoria");
-            autoria.innerHTML =
-                '<div class="row align-items-center g-0 my-5"><div class="col-3 pe-4"><img src="' +
-                todes[0].mugshot +
-                '" alt="mugshot" class="w-100 rounded-circle"></div><div class="col-9"><p class="small text-body-secondary my-1">Infografía realizada por</p><h6 class="my-1 fs-5"><a href="' +
-                todes[0].account +
-                '" target="_blank">' +
-                todes[0].author +
-                ' </a></h6><p class="my-1">' +
-                todes[0].about +
-                "</p></div></div>";
+            autoria.innerHTML = '<div class="row align-items-center g-0 my-5"><div class="col-3 pe-4"><img src="' + todes[0].mugshot + '" alt="mugshot" class="w-100 rounded-circle"></div><div class="col-9"><p class="small text-body-secondary my-1">Infografía realizada por</p><h6 class="my-1 fs-5"><a href="' + todes[0].account + '" target="_blank">' + todes[0].author + ' </a></h6><p class="my-1">' + todes[0].about + '</p></div></div>';
             var links = document.querySelector("#links");
             todes.forEach((x, i) => {
                 if (i > 0) {
-                    links.innerHTML +=
-                        '<div class="col-md-4 h-100 small mb-3"><h6><a href="' +
-                        x.final +
-                        '" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">' +
-                        x.title +
-                        "</a></h6><p>" +
-                        x.description +
-                        ' <cite class="text-body-tertiary">Por ' +
-                        x.author +
-                        "</a></cite></p></div>";
+                    links.innerHTML += '<div class="col-md-4 h-100 small mb-3"><h6><a href="' + x.final + '" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">' + x.title + '</a></h6><p>' + x.description + ' <cite class="text-body-tertiary">Por ' + x.author + '</a></cite></p></div>';
                 }
             });
         </script>
